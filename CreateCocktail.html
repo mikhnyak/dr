@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Account</title>
+    <title>Create cocktail</title>
     <!-- MDB icon -->
     <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
     <!-- Font Awesome -->
@@ -16,10 +16,10 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Material Design Bootstrap -->
     <link rel="stylesheet" href="css/mdb.min.css">
-    <!-- Your custom styles (optional) -->
-    <link rel="stylesheet" href="scss/style.css">
     <!-- Plugin file -->
     <link rel="stylesheet" href="./css/addons/datatables.min.css">
+    <link rel="stylesheet" href="scss/style.css">
+
 
 </head>
 <!--Main Navigation-->
@@ -86,7 +86,7 @@
                         <i class="fas fa-user"></i>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right dropdown-info">
-                        <a class="dropdown-item" href="#">My account</a>
+                        <a class="dropdown-item" href="account.html">My account</a>
                         <a class="dropdown-item" href="logIn.html">Log out</a>
                     </div>
                 </li>
@@ -106,7 +106,7 @@
                 <div class="row wow fadeIn">
                     <!--Grid column-->
                     <div class="col-md-12 mb-4 white-text text-center wow fadeIn">
-                        <h3 class="display-3 font-weight-light white-text mb-0 pt-md-5 pt-5">Account</h3>
+                        <h3 class="display-3 font-weight-light white-text mb-0 pt-md-5 pt-5">Create cocktail</h3>
                         <hr class="hr-light my-4 w-75">
                     </div>
                     <!--Grid column-->
@@ -121,52 +121,151 @@
 
 </header>
 <main>
+    <section class="fixed-bottom box">
+        <!-- Card -->
+        <div class="card h-100">
 
-    <form class="text-center">
-        <div class="container container-border">
-            <div class="row row-cols-1 row-cols-md-1">
-                <div class="col mb-1 md-form">
-                    <label for="validationServerUsername55">Username</label>
-                    <input type="text" class="form-control" id="validationServerUsername55" required>
-                </div>
-                <div class="col mb-1 md-form">
-                    <label for="validationServer025">Email</label>
-                    <input type="email" class="form-control" id="validationServer025" required>
-                </div>
-                <div class="col mb-1 md-form">
-                    <label for="validationServer035">City</label>
-                    <input type="text" class="form-control" id="validationServer035" required>
-                </div>
-                <div class="col mb-1 form-group pt-2">
-                    <select class="custom-select browser-default" required>
-                        <option value="">Gender</option>
-                        <option value="1">Female</option>
-                        <option value="2">Male</option>
-                        <option value="3">Other</option>
-                    </select>
-                    <div class="invalid-feedback">Example invalid custom select feedback</div>
-                </div>
-                <div class="col mb-1 d-flex justify-content-center md-form">
-                    <label for="validationServer05">Password</label>
-                    <input type="password" class="form-control" id="validationServer05" required>
-                </div>
-                <div class="col mb-1 d-flex justify-content-center md-form">
-                    <label for="validationServer5">Password again</label>
-                    <input type="password" class="form-control" id="validationServer5" required>
-                </div>
-                <h6 class="pt-3"><br>If you are the owner of robot-barman, please enter your owner code</h6>
-                <div class="col mb-1 md-form">
-                    <label for="validationServerUsername655">Owner code</label>
-                    <input type="text" class="form-control" id="validationServerUsername655">
+            <!--Card image-->
+            <div>
+                <img class="card-img-top" src="img/cMy.jpg" alt="spirits">
+
+            </div>
+            <div class="mask rgba-gradient"></div>
+
+            <!--Card content-->
+            <div class="card-body">
+
+                <!--Title-->
+                <h4 class="card-title">Your recipe</h4>
+                <!-- Text -->
+                <p>
+                    1. Add white Rum 50 ml<br>
+                    2. Add honey 1 ts and shake
+                </p>
+                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                <div class="text-center">
+                    <button type="button" class="btn aqua-gradient btn-md">Done</button>
+                    <button type="button" class="white btn-md waves-effect">Cancel</button>
                 </div>
 
             </div>
+
         </div>
-        <br>
-        <input class="btn btn-rounded aqua-gradient waves-effect" type="submit">
-    </form>
-    <br>
-    <br>
+        <!-- Card -->
+    </section>
+    <!--Section: pravda-->
+    <section id="Pravda" class="py-5">
+        <div class="container">
+            <!--Section heading-->
+            <h1 class="h1 pt-4">Pravda</h1>
+            <div class="row">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-deep-purple form-check-label active">
+                        <input class="form-check-input" type="radio" name="options" id="option1"
+                            checked>
+                        Spirits
+                    </label>
+                    <label class="btn btn-deep-purple form-check-label">
+                        <input class="form-check-input" type="radio" name="options" id="option2">
+                        Mixers
+                    </label>
+                    <label class="btn btn-deep-purple form-check-label">
+                        <input class="form-check-input" type="radio" name="options" id="option3"> Ice
+                    </label>
+                </div>
+
+            </div>
+            <!-- Search form -->
+            <div class="md-form active-purple active-purple-2 mb-3 text-right">
+                <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+            </div>
+            <!-- Search form -->
+            <hr class="hr-light my-4 w-75">
+            <!--Rum container-->
+            <div class="container">
+                <!--Section heading-->
+                <h3>Rum</h3>
+                <hr class="hr-dark my-4 w-75">
+                <div class="row row-cols-1 row-cols-md-4">
+                    <div class="col mb-4">
+                        <!-- Card -->
+                        <div class="card ">
+                            <img src="img/c2.jpg" alt="spirits" class="card-img-top">
+                            <div class="card-body">
+                                <h4 class="card-title">White rum</h4>
+                                <p><i class="fas fa-dollar-sign"></i><b>15 per 100 ml</b></p>
+                                <div class="text-center">
+                                    <button type="button" class="btn peach-gradient btn-md">Stir</button>
+                                    <button type="button" class="btn peach-gradient btn-md">Add</button>
+                                    <button type="button" class="btn peach-gradient btn-md">Add&Shake</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card -->
+                    </div>
+                </div>
+            </div>
+            <!--Rum container-->
+            <!--Scotch container-->
+            <div class="container">
+                <h3>Scotch</h3>
+                <hr class="hr-dark my-4 w-75">
+                <div class="row row-cols-1 row-cols-md-4">
+                    <div class="col mb-4">
+                        <!-- Card -->
+                        <div class="card ">
+                            <img src="img/c2.jpg" alt="spirits" class="card-img-top">
+                            <div class="card-body">
+                                <h4 class="card-title">Scotch</h4>
+                                <p><i class="fas fa-dollar-sign"></i><b>15 per 100 ml</b></p>
+                                <div class="text-center">
+                                    <button type="button" class="btn peach-gradient btn-md">Stir</button>
+                                    <button type="button" class="btn peach-gradient btn-md">Add</button>
+                                    <button type="button" class="btn peach-gradient btn-md">Add&Shake</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card -->
+                    </div>
+                    <div class="col mb-4">
+                        <!-- Card -->
+                        <div class="card ">
+                            <img src="img/c2.jpg" alt="spirits" class="card-img-top">
+                            <div class="card-body">
+                                <h4 class="card-title">Scotch</h4>
+                                <p><i class="fas fa-dollar-sign"></i><b>15 per 100 ml</b></p>
+                                <div class="text-center">
+                                    <button type="button" class="btn peach-gradient btn-md">Stir</button>
+                                    <button type="button" class="btn peach-gradient btn-md">Add</button>
+                                    <button type="button" class="btn peach-gradient btn-md">Add&Shake</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card -->
+                    </div>
+                    <div class="col mb-4">
+                        <!-- Card -->
+                        <div class="card ">
+                            <img src="img/c2.jpg" alt="spirits" class="card-img-top">
+                            <div class="card-body">
+                                <h4 class="card-title">Scotch</h4>
+                                <p><i class="fas fa-dollar-sign"></i><b>15 per 100 ml</b></p>
+                                <div class="text-center">
+                                    <button type="button" class="btn peach-gradient btn-md">Stir</button>
+                                    <button type="button" class="btn peach-gradient btn-md">Add</button>
+                                    <button type="button" class="btn peach-gradient btn-md">Add&Shake</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card -->
+                    </div>
+                </div>
+            </div>
+            <!--Scotch container-->
+        </div>
+    </section>
+
+
 </main>
 <!--Section: contact-->
 <section id="contact" class="py-5">
@@ -233,7 +332,8 @@
                         <!-- Grid column -->
                         <div class="col-md-12">
                             <div class="md-form">
-                                <textarea id="contact-message" class="form-control md-textarea" rows="3"></textarea>
+                                <textarea id="contact-message" class="form-control md-textarea"
+                                    rows="3"></textarea>
                                 <label for="contact-message">Your message</label>
                             </div>
                         </div>
@@ -317,7 +417,6 @@
 
     </div>
     <!-- Footer Elements -->
-
 
 </footer>
 <!-- Footer -->
